@@ -1,0 +1,163 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+
+      <title>Oscars Trivia - Powered By JavaScript</title>
+
+      <link href="https://fonts.googleapis.com/css?family=Cinzel|Forum|Spectral+SC" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
+    </head>
+
+      <div id="start">
+        <h1 id="startHeader">Oscars Trivia</h1>
+        <button id="startButton" type="button" onclick="check();">Start Quiz</button>
+      </div>
+
+      <div id="quizBody">
+
+        <div id="quest1" class="questions">
+          <form id="form1" class="writeForm">
+          <p class="questionTitle">Question 1:</p>
+          <p class="prompt">Name one actor/actress who has won 3 or more Oscars?</p>
+          <p class="score"></p>
+          <input type="text" id="question1" class="textInput" name="question1"><br>
+          <button class="qButton" id="submit-1" onclick="check1();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest2" class="questions">
+          <form id="form2" class="selectForm">
+          <p class="questionTitle">Question 2:</p>
+          <p class="prompt">Which of the following literary classics was NOT adapted into a Best Picture winner?</p>
+          <p class="score"></p>
+            <div class="radioChoices">
+              <input type="radio" id="question2a" class="radio" name="question2" value="a"> <span class="radioText">Gone with the Wind</span><br>
+              <input type="radio" id="question2b" class="radio" name="question2" value="b"> <span class="radioText">Hamlet</span><br>
+              <input type="radio" id="question2c" class="radio" name="question2" value="c"> <span class="radioText">Great Expectations</span><br>
+              <input type="radio" id="question2d" class="radio" name="question2" value="d"> <span class="radioText">One Flew Over the Cuckoo's Nest</span><br>
+            </div>
+              <button class="qButton" id="submit-2" onclick="check2();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest3" class="questions">
+          <form id="form3" class="selectForm">
+          <p class="questionTitle">Question 3:</p>
+          <p class="prompt">Which of the following iconic directors DID win a Best Director Oscar?</p>
+          <p class="score"></p>
+            <div class="radioChoices">
+              <input type="radio" id="question3a" class="radio" name="question3" value="a"> <span class="radioText">Stanley Kubrick</span><br>
+              <input type="radio" id="question3b" class="radio" name="question3" value="b"> <span class="radioText">Steven Spielberg</span><br>
+              <input type="radio" id="question3c" class="radio" name="question3" value="c"> <span class="radioText">Orson Welles</span><br>
+              <input type="radio" id="question3d" class="radio" name="question3" value="d"> <span class="radioText">Alfred Hitchcock</span><br>
+            </div>
+              <button class="qButton" id="submit-3" onclick="check3();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest4" class="questions">
+          <form id="form4" class="writeForm">
+          <p class="questionTitle">Question 4:</p>
+          <p class="prompt">Name one of the only two sequels that won Best Picture?</p>
+          <p class="score"></p>
+          <input type="text" id="question4" class="textInput" name="question4"><br>
+          <button class="qButton" id="submit-4" onclick="check4();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest5" class="questions">
+          <form id="form5" class="selectForm">
+          <p class="questionTitle">Question 5:</p>
+          <p class="prompt">Which of the following world leaders was NOT portrayed in an Oscar winning performance?</p>
+          <p class="score"></p>
+            <div class="radioChoices">
+              <input type="radio" id="question5a" class="radio" name="question5" value="a"> <span class="radioText">Nelson Mandela</span><br>
+              <input type="radio" id="question5b" class="radio" name="question5" value="b"> <span class="radioText">Idi Amin</span><br>
+              <input type="radio" id="question5c" class="radio" name="question5" value="c"> <span class="radioText">Margaret Thatcher</span><br>
+              <input type="radio" id="question5d" class="radio" name="question5" value="d"> <span class="radioText">Abraham Lincoln</span><br>
+            </div>
+              <button class="qButton" id="submit-5" onclick="check5();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest6" class="questions">
+          <form id="form6" class="selectForm">
+          <p class="questionTitle">Question 6:</p>
+          <p class="prompt">Which of the following Actresses has NOT won more than one Best Actress Oscar?</p>
+          <p class="score"></p>
+            <div class="radioChoices">
+              <input type="radio" id="question6a" class="radio" name="question6" value="a"> <span class="radioText">Sally Field</span><br>
+              <input type="radio" id="question6b" class="radio" name="question6" value="b"> <span class="radioText">Jessica Lange</span><br>
+              <input type="radio" id="question6c" class="radio" name="question6" value="c"> <span class="radioText">Jane Fonda</span><br>
+              <input type="radio" id="question6d" class="radio" name="question6" value="d"> <span class="radioText">Hilary Swank</span><br>
+            </div>
+              <button class="qButton" id="submit-6" onclick="check6();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest7" class="questions">
+          <form id="form7" class="writeForm">
+          <p class="questionTitle">Question 7:</p>
+          <p class="prompt">To this day, who remains the only African-American to win Best Actress?</p>
+          <p class="score"></p>
+          <input type="text" id="question7" class="textInput" name="question7"><br>
+          <button class="qButton" id="submit-7" onclick="check7();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest8" class="questions">
+          <form id="form8" class="selectForm">
+          <p class="questionTitle">Question 8:</p>
+          <p class="prompt">Which of the following well-known Writer/Directors has won an Oscar for writing, but NOT directing?</p>
+          <p class="score"></p>
+            <div class="radioChoices">
+              <input type="radio" id="question8a" class="radio" name="question8" value="a"> <span class="radioText">Wes Anderson</span><br>
+              <input type="radio" id="question8b" class="radio" name="question8" value="b"> <span class="radioText">Woody Allen</span><br>
+              <input type="radio" id="question8c" class="radio" name="question8" value="c"> <span class="radioText">Quentin Tarantino</span><br>
+              <input type="radio" id="question8d" class="radio" name="question8" value="d"> <span class="radioText">Joel & Ethan Coen</span><br>
+            </div>
+              <button class="qButton" id="submit-8" onclick="check8();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest9" class="questions">
+          <form id="form9" class="selectForm">
+          <p class="questionTitle">Question 9:</p>
+          <p class="prompt">Of the following iconic British actresses, who was the LAST to win their first Oscar?</p>
+          <p class="score"></p>
+            <div class="radioChoices">
+              <input type="radio" id="question9a" class="radio" name="question9" value="a"> <span class="radioText">Julie Christie</span><br>
+              <input type="radio" id="question9b" class="radio" name="question9" value="b"> <span class="radioText">Helen Mirren</span><br>
+              <input type="radio" id="question9c" class="radio" name="question9" value="c"> <span class="radioText">Maggie Smith</span><br>
+              <input type="radio" id="question69" class="radio" name="question9" value="d"> <span class="radioText">Judi Dench</span><br>
+            </div>
+              <button class="qButton" id="submit-9" onclick="check9();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="quest10" class="questions">
+          <form id="form10" class="writeForm">
+          <p class="questionTitle">Question 10:</p>
+          <p class="prompt">Gene Hackman has received 3 Oscar nominations for his acting over the span of his career (including two wins),
+            can you name one of the films for which he received a nomination?</p>
+          <p class="score"></p>
+          <input type="text" id="question10" class="textInput" name="question10:"><br>
+          <button class="qButton" id="submit-10" onclick="check10();" type="button">Submit Answer</button>
+          </form>
+        </div>
+
+        <div id="winloss" class="questions">
+          <h1 class="mainHeader"></h1>
+          <h3 class="subHeader"></h3>
+          <p class="finalScore"></p>
+          <p class="scoreNumber"></p>
+        </div>
+
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
