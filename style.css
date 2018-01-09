@@ -5,6 +5,7 @@
 
   body {
     background-color: #1D1D1D;
+    margin-bottom: -80px;
   }
 
   #startHeader {
@@ -18,7 +19,7 @@
     padding-bottom: 20px;
     width: 680px;
     margin: auto;
-    margin-top: -730px;
+    margin-top: -740px;
     border-radius: 35px 35px 5px 5px;
     border: 5px solid #81700D;
   }
@@ -31,7 +32,7 @@
     background-color: #1D1D1D;
   }
 
-  #startButton {
+  .startButton {
     font-family: 'Spectral SC', serif;
     background-color: #3F3D3D;
     color: #B4AC2F;
@@ -48,7 +49,7 @@
     outline: none;
   }
 
-  #startButton:hover {
+  .startButton:hover {
     background-color: #7A6A0C;
     color: black;
     border: 4px solid #BDBCBC;
@@ -63,7 +64,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 60px;
     height: 700px;
     justify-content: space-between;
     background-color: #7A6A0C;
@@ -140,6 +141,7 @@
     text-align: center;
     background-color: #939393;
     border: 2px solid #3B3B3B;
+    outline: none;
   }
 
   .writeForm {
@@ -159,7 +161,7 @@
 
   .radioText {
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .radio {

@@ -3,9 +3,10 @@
 
   function check(){
     document.getElementById('quest1').style.visibility = "visible";
-    document.getElementById('startButton').style.visibility = "hidden";
+    document.getElementsByClassName('startButton')[0].style.visibility = "hidden";
     document.getElementById('startHeader').style.marginBottom = "0px";
     document.getElementById('quizBody').style.marginTop = "0px";
+    document.getElementById('oscarCollage').style.visibility = "hidden";
   };
 
   function check1(){
@@ -347,7 +348,7 @@
     if (score >= 6){
       document.getElementById('winloss').style.visibility = "visible";
       document.getElementById('winloss').style.backgroundColor = "#2A7504";
-      document.getElementsByClassName('score').style.visibility = "hidden";
+      document.getElementsByClassName('startButton')[1].style.marginTop = "10px";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Congratulations!";
       document.getElementsByClassName('subHeader')[0].innerHTML = "You Won!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
@@ -355,7 +356,7 @@
     } else if (score == 0){
       document.getElementById('winloss').style.visibility = "visible";
       document.getElementById('winloss').style.backgroundColor = "#A80A0A";
-      document.getElementsByClassName('score')[9].style.visibility = "hidden";
+      document.getElementsByClassName('startButton')[1].style.marginTop = "10px";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Sorry!";
       document.getElementsByClassName('subHeader')[0].innerHTML = "You Lost!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
@@ -363,7 +364,7 @@
     } else {
       document.getElementById('winloss').style.visibility = "visible";
       document.getElementById('winloss').style.backgroundColor = "#A80A0A";
-      document.getElementsByClassName('score').style.visibility = "hidden";
+      document.getElementsByClassName('startButton')[1].style.marginTop = "10px";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Sorry!";
       document.getElementsByClassName('subHeader')[0].innerHTML = "You Lost!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
