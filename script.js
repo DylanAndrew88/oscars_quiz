@@ -20,6 +20,7 @@
       document.getElementById('question1').style.visibility = "hidden";
       document.getElementsByClassName('score')[0].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[0].style.visibility = "visible";
+      document.getElementsByClassName('score')[0].style.marginBottom = "-30px";
       document.getElementById('submit-1').innerHTML = "NEXT>>>";
       document.getElementById('submit-1').setAttribute("onclick", "reveal1()");
     } else {
@@ -29,6 +30,7 @@
       document.getElementById('question1').style.visibility = "hidden";
       document.getElementsByClassName('score')[0].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[0].style.visibility = "visible";
+      document.getElementsByClassName('score')[0].style.marginBottom = "-30px";
       document.getElementById('submit-1').innerHTML = "NEXT>>>";
       document.getElementById('submit-1').setAttribute("onclick", "reveal1()");
     }
@@ -122,6 +124,7 @@
       document.getElementById('question4').style.visibility = "hidden";
       document.getElementsByClassName('score')[3].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[3].style.visibility = "visible";
+      document.getElementsByClassName('score')[3].style.marginBottom = "-30px";
       document.getElementById('submit-4').innerHTML = "NEXT>>>";
       document.getElementById('submit-4').setAttribute("onclick", "reveal4()");
     } else {
@@ -131,6 +134,7 @@
       document.getElementById('question4').style.visibility = "hidden";
       document.getElementsByClassName('score')[3].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[3].style.visibility = "visible";
+      document.getElementsByClassName('score')[3].style.marginBottom = "-30px";
       document.getElementById('submit-4').innerHTML = "NEXT>>>";
       document.getElementById('submit-4').setAttribute("onclick", "reveal4()");
     }
@@ -220,6 +224,7 @@
       document.getElementById('question7').style.visibility = "hidden";
       document.getElementsByClassName('score')[6].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[6].style.visibility = "visible";
+      document.getElementsByClassName('score')[6].style.marginBottom = "-30px";
       document.getElementById('submit-7').innerHTML = "NEXT>>>";
       document.getElementById('submit-7').setAttribute("onclick", "reveal7()");
     } else {
@@ -229,6 +234,7 @@
       document.getElementById('question7').style.visibility = "hidden";
       document.getElementsByClassName('score')[6].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[6].style.visibility = "visible";
+      document.getElementsByClassName('score')[6].style.marginBottom = "-30px";
       document.getElementById('submit-7').innerHTML = "NEXT>>>";
       document.getElementById('submit-7').setAttribute("onclick", "reveal7()");
     }
@@ -320,6 +326,7 @@
       document.getElementById('question10').style.visibility = "hidden";
       document.getElementsByClassName('score')[9].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[9].style.visibility = "visible";
+      document.getElementsByClassName('score')[9].style.marginBottom = "-30px";
       document.getElementById('submit-10').innerHTML = "SUBMIT";
       document.getElementById('submit-10').setAttribute("onclick", "reveal10()");
     } else {
@@ -329,6 +336,7 @@
       document.getElementById('question10').style.visibility = "hidden";
       document.getElementsByClassName('score')[9].innerHTML = "Current Score: "+ score +"/10";
       document.getElementsByClassName('score')[9].style.visibility = "visible";
+      document.getElementsByClassName('score')[9].style.marginBottom = "-30px";
       document.getElementById('submit-10').innerHTML = "SUBMIT";
       document.getElementById('submit-10').setAttribute("onclick", "reveal10()");
     }
@@ -339,6 +347,7 @@
     if (score >= 6){
       document.getElementById('winloss').style.visibility = "visible";
       document.getElementById('winloss').style.backgroundColor = "#2A7504";
+      document.getElementsByClassName('score').style.visibility = "hidden";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Congratulations!";
       document.getElementsByClassName('subHeader')[0].innerHTML = "You Won!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
@@ -346,6 +355,7 @@
     } else if (score == 0){
       document.getElementById('winloss').style.visibility = "visible";
       document.getElementById('winloss').style.backgroundColor = "#A80A0A";
+      document.getElementsByClassName('score')[9].style.visibility = "hidden";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Sorry!";
       document.getElementsByClassName('subHeader')[0].innerHTML = "You Lost!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
@@ -353,6 +363,7 @@
     } else {
       document.getElementById('winloss').style.visibility = "visible";
       document.getElementById('winloss').style.backgroundColor = "#A80A0A";
+      document.getElementsByClassName('score').style.visibility = "hidden";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Sorry!";
       document.getElementsByClassName('subHeader')[0].innerHTML = "You Lost!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
