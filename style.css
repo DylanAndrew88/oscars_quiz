@@ -45,6 +45,7 @@
     border-radius: 5px 5px 5px 5px;
     border: 4px solid #898888;
     cursor: pointer;
+    outline: none;
   }
 
   #startButton:hover {
@@ -177,6 +178,7 @@
     border: 3px solid #959595;
     cursor: pointer;
     text-align: center;
+    outline: none;
   }
 
   .qButton:hover {
