@@ -6,6 +6,7 @@
   body {
     background-color: #1D1D1D;
     margin-bottom: -80px;
+    height: 680px;
   }
 
   #startHeader {
@@ -13,11 +14,11 @@
     background-color: #999999;
     color: #303030;
     text-shadow: 1px 1px white;
-    font-size: 47px;
+    font-size: 43px;
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 680px;
+    width: 550px;
     margin: auto;
     margin-top: -740px;
     border-radius: 35px 35px 5px 5px;
@@ -97,7 +98,7 @@
     visibility: hidden;
     border: 2px solid black;
     padding-bottom: 20px;
-    position: fixed;
+    position: absolute;
     width: 40vw;
     margin-left: 20vw;
     margin-top: -560px;
@@ -194,14 +195,14 @@
   #oscarCollage {
     width: 80vw;
     display: inline-block;
-    margin-left: 17.5vw;
+    margin-left: 25vw;
     margin-top: -100px;
   }
 
   .oscar {
-    width: 15vw;
+    width: 10vw;
     margin-top: -600px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
 

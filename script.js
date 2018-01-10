@@ -49,7 +49,7 @@
       score++
       document.getElementById('quest2').style.backgroundColor = "#2A7504";
       document.getElementsByClassName('questionTitle')[1].innerHTML = "Correct!";
-      document.getElementsByClassName('prompt')[1].innerHTML = "While the David Lean adaptation of the Charles Dickens classic was nominated for Best Picture, it did not win.";
+      document.getElementsByClassName('prompt')[1].innerHTML = "While the David Lean adaptation of the Charles Dickens classic 'Great Expectations' was nominated for Best Picture, it did not win.";
       document.getElementsByClassName('radioChoices')[0].style.visibility = "hidden";
       document.getElementsByClassName('radioChoices')[0].style.marginTop = "0px";
       document.getElementsByClassName('radioChoices')[0].style.marginBottom = "-30px";
@@ -60,7 +60,7 @@
     } else {
       document.getElementById('quest2').style.backgroundColor = "#A80A0A";
       document.getElementsByClassName('questionTitle')[1].innerHTML = "Sorry, Wrong!";
-      document.getElementsByClassName('prompt')[1].innerHTML = "While the David Lean adaptation of the Charles Dickens classic was nominated for Best Picture, it did not win.";
+      document.getElementsByClassName('prompt')[1].innerHTML = "While the David Lean adaptation of the Charles Dickens classic 'Great Expectations' was nominated for Best Picture, it did not win.";
       document.getElementsByClassName('radioChoices')[0].style.visibility = "hidden";
       document.getElementsByClassName('radioChoices')[0].style.marginTop = "0px";
       document.getElementsByClassName('radioChoices')[0].style.marginBottom = "-30px";
@@ -113,10 +113,11 @@
   function check4(){
     let answer4 = document.getElementById('question4').value.toLowerCase();
     if ((answer4 == "the godfather: part ii") || (answer4 == "the godfather: part 2") ||
-    (answer4 == "the godfather part 2") || (answer4 == "the godfather part ii") || (answer4 == "return of the king")
-    || (answer4 == "the return of the king") || (answer4 == "the lord of the rings: the return of the king")
-    || (answer4 == "lord of the rings: the return of the king") || (answer4 == "lord of the rings return of the king")
-    || (answer4 == "the lord of the rings: return of the king"))
+    (answer4 == "the godfather part 2") || (answer4 == "the godfather part ii") || (answer4 == "godfather: part ii") ||
+    (answer4 == "godfather: part 2") || (answer4 == "godfather part 2") || (answer4 == "godfather part ii") ||
+    (answer4 == "return of the king") || (answer4 == "the return of the king") ||
+    (answer4 == "the lord of the rings: the return of the king") || (answer4 == "lord of the rings: the return of the king") ||
+    (answer4 == "lord of the rings return of the king") || (answer4 == "the lord of the rings: return of the king"))
     {
       score++
       document.getElementById('quest4').style.backgroundColor = "#2A7504";
@@ -153,7 +154,7 @@
       score++
       document.getElementById('quest5').style.backgroundColor = "#2A7504";
       document.getElementsByClassName('questionTitle')[4].innerHTML = "Correct!";
-      document.getElementsByClassName('prompt')[4].innerHTML = 'While Morgan Freeman recieved a Best Actor nomination for playing Mandela in "Invictus", he did not win.';
+      document.getElementsByClassName('prompt')[4].innerHTML = 'While Morgan Freeman received a Best Actor nomination for playing Mandela in "Invictus", he did not win.';
       document.getElementsByClassName('radioChoices')[2].style.visibility = "hidden";
       document.getElementsByClassName('radioChoices')[2].style.marginTop = "0px";
       document.getElementsByClassName('radioChoices')[2].style.marginBottom = "-30px";
@@ -164,7 +165,7 @@
     } else {
       document.getElementById('quest5').style.backgroundColor = "#A80A0A";
       document.getElementsByClassName('questionTitle')[4].innerHTML = "Sorry, Wrong!";
-      document.getElementsByClassName('prompt')[4].innerHTML = 'While Morgan Freeman recieved a Best Actor nomination for playing Mandela in "Invictus", he did not win.';
+      document.getElementsByClassName('prompt')[4].innerHTML = 'While Morgan Freeman received a Best Actor nomination for playing Mandela in "Invictus", he did not win.';
       document.getElementsByClassName('radioChoices')[2].style.visibility = "hidden";
       document.getElementsByClassName('radioChoices')[2].style.marginTop = "0px";
       document.getElementsByClassName('radioChoices')[2].style.marginBottom = "-30px";
@@ -358,7 +359,7 @@
       document.getElementById('winloss').style.backgroundColor = "#A80A0A";
       document.getElementsByClassName('startButton')[1].style.marginTop = "10px";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Sorry!";
-      document.getElementsByClassName('subHeader')[0].innerHTML = "You Lost!";
+      document.getElementsByClassName('subHeader')[0].innerHTML = "Better Luck Next Time!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
       document.getElementsByClassName('scoreNumber')[0].innerHTML = "0%";
     } else {
@@ -366,7 +367,7 @@
       document.getElementById('winloss').style.backgroundColor = "#A80A0A";
       document.getElementsByClassName('startButton')[1].style.marginTop = "10px";
       document.getElementsByClassName('mainHeader')[0].innerHTML = "Sorry!";
-      document.getElementsByClassName('subHeader')[0].innerHTML = "You Lost!";
+      document.getElementsByClassName('subHeader')[0].innerHTML = "Better Luck Next Time!";
       document.getElementsByClassName('finalScore')[0].innerHTML = "Your final score was:";
       document.getElementsByClassName('scoreNumber')[0].innerHTML = score+"0%";
     }
